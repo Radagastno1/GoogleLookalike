@@ -8,19 +8,23 @@ html {
     height: 100%;
 }
 
+/* flexar redan i bodyn så att alla element (header, main, footer) ska hålla ihop bättre som en sida, 
+samt för att få med utfyllnads-delen i main */
 body {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
+/* header och dess element */
+
 header {
     top: 0;
-    height: 3.5rem;
+    height: 48px;
     width: 100%;
 }
 
-
+/* här sätts flexend så att barnen hamnar till höger i headern då det är direction - row */
 .header-div {
     height: 100mv;
     display: flex;
@@ -31,23 +35,7 @@ header {
     align-items: center;
 }
 
-a {
-    font: 13px/27px Roboto, Arial, sans-serif;
-    line-height: 24px;
-    color: rgba(0, 0, 0, .87);
-    text-decoration: none;
-}
-
-.link {
-    margin-right: 1rem;
-}
-
-.link:hover,
-.a-footer:hover,
-.footer-certificate:hover {
-    text-decoration: underline;
-}
-
+/* en lite genomskinlig grå färg runt "google apps" ikonen */
 #icon-hover-button:hover {
     cursor: pointer;
     border-radius: 80%;
@@ -64,17 +52,20 @@ a {
     background: #1b66c9
 }
 
+/* main och dess element */
 
+/* här sätter jag att divarna i main ska vara uppradade lodrätta - column. dessa ska fylla main. */
 main {
-    margin-top: 3.5rem;
+    margin-top: 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
     min-height: 100mv;
-    flex: 1;
 }
 
+/* här sätts flexend så att google loggan hamnar nederst i diven när skärmen ändras, nära sökdiven */
 .logo-div {
     display: flex;
     align-items: center;
@@ -87,7 +78,7 @@ main {
     height: 92px;
     width: 272px;
 }
-
+/* centrerar och sätter till uppradat lodrätt för sök-diven och knapp-diven, så dom hamnar under varandra */
 .search-container {
     display: flex;
     flex-direction: column;
@@ -96,7 +87,8 @@ main {
     width: 100%;
     align-items: center;
 }
-
+/* fixar sökrutan genom att runda den med border radius, sätta padding så den tjockas, space between för de olika ikoner 
+och textarean */
 .search-bar-div {
     background: #fff;
     border: 1px solid #dfe1e5;
@@ -116,7 +108,7 @@ main {
 }
 
 .search-bar {
-    resize: none;
+    resize:none;
     background-color: transparent;
     border: none;
     margin: 0 10px;
@@ -139,13 +131,14 @@ main {
 .search-button:hover {
     border: 1px solid #dadce0;
 }
-
+/* centrerar knapparna horisontellt som är under sökområdet */
 .search-button-div {
     padding: 18px;
     display: flex;
     justify-content: center;
 }
-
+/* såg att google har en div som funkar som utfyllnad och för att (tror jag) anpassa efter skärm, så provade det */
+/* genom flex grow så tar den upp spacet som finns om det finns */
 .fillout-div {
     flex: 1;
     flex-grow: 1;
@@ -155,15 +148,17 @@ main {
     margin-top: auto;
 }
 
+/* footer och dess element */
 
-/* detta hör till footer */
+/* sätter att footern ska vara längst ner på sidan genom margin-bottom : 0 */
 footer {
     margin-top: auto;
     background: #f2f2f2;
     margin-bottom: 0;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
+/* sätter en border på botten av texten så att det blir som linjen som skiljer landet från länkarna som google har */
 .country-text {
     padding: 15px 30px;
     border-bottom: 1px solid #dadce0;
@@ -172,6 +167,8 @@ footer {
     font-family: arial, sans-serif;
 }
 
+/* här bestäms att om det inte får plats så hamnar det på raden nedanför med flex wrap: wrap så att 
+man inte måste ändra allt med media queries utan att det ändå anpassar sig */
 .links-container {
     display: flex;
     flex-wrap: wrap;
@@ -211,13 +208,31 @@ footer {
 
 /* regler som delas  */
 
+/* jag var soecifik här istället för ett a, då alla a inte ska ha denna regel */
+.link:hover,
+.a-footer:hover,
+.footer-certificate:hover {
+    text-decoration: underline;
+}
+
+a {
+    font: 13px/27px Roboto, Arial, sans-serif;
+    line-height: 24px;
+    color: rgba(0, 0, 0, .87);
+    text-decoration: none;
+}
+
+.link {
+    margin-right: 1rem;
+}
+
 #icon-button:hover {
     cursor: pointer;
 }
 
 .material-symbols-outlined {
     color: #5f6368;
-    opacity: 1;
+    opacity: 0.8;
     margin: 0 0.5rem;
 }
 

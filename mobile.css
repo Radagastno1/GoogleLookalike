@@ -1,46 +1,43 @@
-
-
-.logo-div {
-    height: 250px;
+body {
+    zoom: 0.4;
 }
 
-
-.certificate-div {
-    order: -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.country-text {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+    font-family: arial, sans-serif;
 }
 
+/* här bestäms att om det inte får plats så hamnar det på raden nedanför med flex wrap: wrap så att 
+man inte måste ändra allt med media queries utan att det ändå anpassar sig */
 .links-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    white-space: nowrap;
+    justify-content: space-evenly;
+    width: 100mv;
+    align-items: center;
 }
 
-.links-div {
-    flex-wrap: wrap;
-    white-space: nowrap;
-}
+/* ändrat storlek på padding och font för att få ihop footer-divarna lite som på googles skärmvy för telefon */
 
 #flexstart-footer {
-    flex-direction: row;
-    display: flex;
-    justify-content: flex-start;
+    padding-left: 10px;
 }
 
 #flexend-footer {
-    flex-direction: row;
-    display: flex;
-    justify-content: flex-end;
+    padding-right: 10px;
 }
 
-.fillout-div {
-    height: 500px;
+.a-footer,
+.footer-certificate {
+    padding: 10px;
+    font-size: 10px;
+    font: 10px/27px Roboto, Arial, sans-serif;
 }
 
-body {
-    zoom: 0.6;
+.certificate-image {
+    padding: 10px;
+    max-height: 1.75rem;
 }
