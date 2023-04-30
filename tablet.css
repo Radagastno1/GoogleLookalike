@@ -1,0 +1,19 @@
+
+.certificate-div {
+    order: 0;
+    width: 100%;
+    justify-content: center;
+}
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    white-space: nowrap;
+}
+.certificate-div {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }

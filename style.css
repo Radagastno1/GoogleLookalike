@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    top: 0;
+    height: 3.5rem;
+    width: 100%;
+    background-color: aqua;
+}
+
+
+.header-div {
+    height: 100mv;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    font: 13px/27px Roboto, Arial, sans-serif;
+    line-height: 24px;
+    color: rgba(0, 0, 0, .87);
+    text-decoration: none;
+}
+.link
+{
+    margin-right: 1rem;
+}
+
+.link:hover, .a-footer:hover, .footer-certificate:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    background: #1a73e8;
+    color: white;
+    font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.login-button:hover {
+    background: #1b66c9
+}
+
+
+main {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100mv;
+    flex: 1;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    height: 92px;
+    width: 272px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.search-bar-div {
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 44px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-bar-div:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar {
+    resize: none;
+    background-color: transparent;
+    border: none;
+    margin: 0 10px;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #202124;
+    outline: none;
+    display: flex;
+    position: relative;
+    line-height: 22px;
+    flex: 100%;
+}
+
+.search-button {
+    background-color: #f8f9fa;
+    font-family: arial, sans-serif;
+    margin: 10px;
+}
+
+.search-button:hover {
+    border: 1px solid #dadce0;
+}
+
+.search-button-div {
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    background-color: burlywood;
+}
+
+.fillout-div {
+    flex: 1;
+    flex-grow: 1;
+    width: 100%;
+    width: 100mv;
+    background-color: hotpink;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+
+/* detta hör till footer */
+footer {
+    background: #f2f2f2;
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.footer-container {
+    flex-shrink: 0;
+}
+
+.country-text {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+    font-family: arial, sans-serif;
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+    align-items: center;
+}
+
+.a-footer,
+.footer-certificate {
+    padding: 14px;
+    color: #70757a;
+    font-size: 15px;
+    font: 13px/27px Roboto, Arial, sans-serif;
+}
+
+.certificate-image {
+    padding: 14px;
+    max-height: 2.75rem;
+}
+
+.footer-certificate {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* sånt som gäller flera  */
+.material-symbols-outlined {
+    color: #5f6368;
+    opacity: 1;
+    margin: 0 0.5rem;
+}
+
+button {
+    border: 1px solid transparent;
+    padding: 9px 23px;
+    border-radius: 4px;
+}
+
+button:hover {
+    cursor: pointer;
+}
