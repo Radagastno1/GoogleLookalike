@@ -48,6 +48,12 @@ a {
     text-decoration: underline;
 }
 
+#icon-hover-button:hover {
+    cursor: pointer;
+    border-radius: 80%;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
 .login-button {
     background: #1a73e8;
     color: white;
@@ -168,10 +174,18 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* padding: 0 20px; */
     width: 100mv;
     align-items: center;
 }
+
+#flexstart-footer {
+    padding-left: 15px;
+}
+
+#flexend-footer {
+    padding-right: 15px;
+}
+
 
 .a-footer,
 .footer-certificate {
@@ -193,18 +207,11 @@ footer {
 
 
 
-/* sånt som gäller flera  */
-
-#icon-hover-button:hover {
-    cursor: pointer;
-    border-radius: 80%;
-    background-color: rgba(128, 128, 128, 0.5);
-}
+/* regler som delas  */
 
 #icon-button:hover {
     cursor: pointer;
 }
-
 
 .material-symbols-outlined {
     color: #5f6368;
