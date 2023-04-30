@@ -1,20 +1,39 @@
-
-.certificate-div {
-    order: 0;
-    width: 100%;
-    justify-content: center;
-}
-.links-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    white-space: nowrap;
-}
 .certificate-div {
     order: -1;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-  }
-  
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.links-div {
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+#flexstart-footer {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#flexend-footer {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fillout-div {
+    height: 500px;
+}
+
+body {
+    zoom: 0.8;
+}

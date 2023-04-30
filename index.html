@@ -10,7 +10,6 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="tablet.css" media="(max-width:70rem)">
         <link rel="stylesheet" href="mobile.css" media="(max-width:40rem)">
-        <script src="script.js"></script>
     <title>Google</title>
 </head>
 
@@ -21,7 +20,7 @@
             <div class="header-div">
                 <a class="link" href="https://mail.google.com/mail/&ogbl">Gmail</a>
                 <a class="link" href="https://mail.google.com/mail/&ogbl">Bilder</a>
-                <a class="material-symbols-outlined" role="button">
+                <a class="material-symbols-outlined" role="button" id="icon-hover-button">
                     apps
                 </a>
                 <button class="login-button"
@@ -47,16 +46,15 @@
                     search
                 </div>
 
-                <textarea class="search-bar" name="q" rows="1" title="Sök" maxlength="2048">
-                    </textarea>
+                <textarea class="search-bar" name="q" rows="1" title="Sök" maxlength="2048"></textarea>
 
-                <span class="material-symbols-outlined" id="keyboard-button" role="button">
+                <span class="material-symbols-outlined" id="icon-button" role="button">
                     keyboard
                 </span>
-                <span class="material-symbols-outlined" id="mic-button" role="button">
+                <span class="material-symbols-outlined" id="icon-button" role="button">
                     mic
                 </span>
-                <span class="material-symbols-outlined" id="camera-button" role="button">
+                <span class="material-symbols-outlined" id="icon-button" role="button">
                     camera_alt
                 </span>
 
@@ -88,7 +86,7 @@
 
             <div class="links-container">
 
-                <div class="links-div">
+                <div class="links-div" id="flexstart-footer">
                     <a class="a-footer" href="/">Om</a>
                     <a class="a-footer" href="/">Annonsering</a>
                     <a class="a-footer" href="/">Företagslösningar</a>
@@ -101,11 +99,11 @@
                         <img class="certificate-image"
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"
                             alt="A green leaf">
-                        Koldiofixneutralt sedan 2007
+                        Koldioxidneutralt sedan 2007
                     </a>
                 </div>
 
-                <div class="links-div">
+                <div class="links-div" id="flexend-footer">
                     <a class="a-footer" href="/">Integritet</a>
                     <a class="a-footer" href="/">Villkor</a>
                     <a class="a-footer" href="/">Inställningar</a>

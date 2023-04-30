@@ -17,3 +17,6 @@
     align-items: center;
     width: 100%;
   }
+  body {
+    zoom: 0.4;
+}
