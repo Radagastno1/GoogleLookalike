@@ -143,7 +143,6 @@ och textarean */
 /* såg att google har en div som funkar som utfyllnad och för att (tror jag) anpassa efter skärm, så provade det */
 /* genom flex grow så tar den upp spacet som finns om det finns */
 .fillout-div {
-    background-color: lightcoral;
     flex: 1;
     flex-grow: 1;
     width: 100%;
