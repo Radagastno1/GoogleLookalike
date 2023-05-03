@@ -1,15 +1,3 @@
-body {
-    zoom: 0.4;
-}
-
-.country-text {
-    padding: 15px 30px;
-    border-bottom: 1px solid #dadce0;
-    font-size: 15px;
-    color: #70757a;
-    font-family: arial, sans-serif;
-}
-
 /* här bestäms att om det inte får plats så hamnar det på raden nedanför med flex wrap: wrap så att 
 man inte måste ändra allt med media queries utan att det ändå anpassar sig */
 .links-container {

@@ -6,12 +6,14 @@
 
 html {
     height: 100%;
+    max-width: 100%;
 }
 
 /* flexar redan i bodyn så att alla element (header, main, footer) ska hålla ihop bättre som en sida, 
 samt för att få med utfyllnads-delen i main */
 body {
     height: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -63,6 +65,7 @@ main {
     justify-content: flex-start;
     width: 100%;
     min-height: 100mv;
+    height: 100%;
 }
 
 /* här sätts flexend så att google loggan hamnar nederst i diven när skärmen ändras, nära sökdiven */
@@ -140,10 +143,10 @@ och textarean */
 /* såg att google har en div som funkar som utfyllnad och för att (tror jag) anpassa efter skärm, så provade det */
 /* genom flex grow så tar den upp spacet som finns om det finns */
 .fillout-div {
+    background-color: lightcoral;
     flex: 1;
     flex-grow: 1;
     width: 100%;
-    width: 100mv;
     flex-shrink: 0;
     margin-top: auto;
 }
@@ -155,7 +158,13 @@ footer {
     margin-top: auto;
     background: #f2f2f2;
     margin-bottom: 0;
-    /* flex-shrink: 0; */
+}
+
+.footer-container
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* sätter en border på botten av texten så att det blir som linjen som skiljer landet från länkarna som google har */
@@ -173,7 +182,7 @@ man inte måste ändra allt med media queries utan att det ändå anpassar sig *
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100mv;
+    width: 100%;
     align-items: center;
 }
 

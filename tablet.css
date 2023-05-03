@@ -1,15 +1,11 @@
-body {
-    zoom: 0.8;
-}
 .logo-div {
     height: 200px;
 }
 .links-container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     white-space: nowrap;
 }
+
 /* för att få biten som säger "koldioxidneutralt sedan 2007" att hamna först av de tre divarna
    samt centrera den då den är ensam på toppen */
 .certificate-div {
