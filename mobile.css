@@ -4,7 +4,7 @@ man inte måste ändra allt med media queries utan att det ändå anpassar sig *
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100mv;
+    width: 100%;
     align-items: center;
 }
 
@@ -18,8 +18,12 @@ man inte måste ändra allt med media queries utan att det ändå anpassar sig *
     padding-right: 10px;
 }
 
+footer
+{
+    height: 40%;
+}
 .a-footer,
-.footer-certificate {
+.footer-certificate, .country-text {
     padding: 10px;
     font-size: 10px;
     font: 10px/27px Roboto, Arial, sans-serif;

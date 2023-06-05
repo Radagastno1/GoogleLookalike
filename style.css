@@ -157,6 +157,7 @@ footer {
     margin-top: auto;
     background: #f2f2f2;
     margin-bottom: 0;
+    width: 100%;
 }
 
 .footer-container
@@ -164,6 +165,8 @@ footer {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 /* sätter en border på botten av texten så att det blir som linjen som skiljer landet från länkarna som google har */
@@ -183,6 +186,7 @@ man inte måste ändra allt med media queries utan att det ändå anpassar sig *
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    overflow: hidden;
 }
 
 #flexstart-footer {
